@@ -1,0 +1,26 @@
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Swiper styles */
+.swiper {
+  width: 600px;
+  height: 500px;
+}
+
+.first-section {
+  background-color: #f8bb00;
+}
+
+.card-new-class {
+  background-color: #ffbf00cf;
+}
+
+.card-new-class:hover {
+  background-color: #ffbf00f5;
+}
+
+
