@@ -20,7 +20,89 @@ body {
 }
 
 .card-new-class:hover {
-  background-color: #ffbf00f5;
+  background-color: #ffbf00f6;
 }
 
+/* Footer */
+
+main {
+    flex: 1 0 auto;
+  }
+
+  .footer-wrapper {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .footer-title {
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .footer-title:hover::after {
+    width: 100%;
+  }
+
+  .hover-opacity {
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-opacity:hover {
+    opacity: 0.8;
+  }
+
+  .social-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .social-icon:hover {
+    transform: translateY(-3px);
+  }
+
+  .back-to-top {
+    transition: all 0.3s ease;
+    opacity: 0.9;
+  }
+
+  .back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  .newsletter-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .newsletter-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .newsletter-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+  }
+
+  .newsletter-form .btn {
+    transition: all 0.3s ease;
+  }
+
+  .newsletter-form .btn:hover {
+    background-color: #f8bb00;
+    border-color: #f8bb00;
+    color: white;
+  }
 

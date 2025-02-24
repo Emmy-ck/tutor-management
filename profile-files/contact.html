@@ -220,18 +220,73 @@
 
   </main>
 </body>
-<footer class="fixed-bottom text-center py-2" style="background-color: #622c84; font-size: 14px; font-weight: 500;">
-  <section style="color: #ffffff;">
-    <div class="container position-relative">
-      <p class="mb-0">© 2025 My Bidhaa. All rights reserved</p>
-      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
-         class="text-white text-decoration-none position-absolute end-0 top-50 translate-middle-y">
-        <i class="bi bi-arrow-up-circle-fill" style="font-size: 24px;"></i>
-        <span class="ms-1">Back to top</span>
-      </a>
+<div class="footer-wrapper" style="margin-top: auto;">
+  <footer class="w-100 py-4" style="background-color: #622c84; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); position: relative; left: 50%; right: 50%; transform: translateX(-50%);">
+    <div class="container-fluid px-4">
+      <div class="row g-4">
+        <div class="col-md-3 text-white">
+          <h5 class="mb-3 fw-bold footer-title">My Bidhaa</h5>
+          <p class="mb-0">Empowering your shopping experience with innovative solutions and exceptional service.</p>
+        </div>
+        <div class="col-md-3 text-white">
+          <h5 class="mb-3 fw-bold footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="./index.html" class="text-white text-decoration-none hover-opacity">Home</a></li>
+            <li class="mb-2"><a href="./about.html" class="text-white text-decoration-none hover-opacity">About Us</a></li>
+            <li class="mb-2"><a href="./services.html" class="text-white text-decoration-none hover-opacity">Services</a></li>
+            <li class="mb-2"><a href="./contact.html" class="text-white text-decoration-none hover-opacity">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-white">
+          <h5 class="mb-3 fw-bold footer-title">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i>hello@mybidhaa.co.ke</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+254 712 345 678</li>
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>123 Business Street, Nairobi, Kenya</li>
+          </ul>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 text-white">
+          <h5 class="mb-3 fw-bold footer-title">Newsletter</h5>
+          <p class="mb-3">Subscribe to our newsletter for updates and exclusive offers!</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email for newsletter">
+              <button class="btn btn-light" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="border-white my-4">
+      <div class="row">
+        <div class="col-12 position-relative">
+          <p class="text-white text-center mb-0">© 2025 My Bidhaa. All rights reserved</p>
+          <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+             class="text-white text-decoration-none back-to-top position-absolute end-0 top-50 translate-middle-y me-4">
+            <i class="bi bi-arrow-up-circle-fill" style="font-size: 24px;"></i>
+            <span class="ms-1">Back to top</span>
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
-</footer>
+  </footer>
+</div>
+
+<style>
+  html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  
+</style>
+
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
